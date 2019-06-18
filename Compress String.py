@@ -13,7 +13,6 @@ def compress (st):
         return stl
 
     for i in range(stlen-1):
-
         if stl[i] == stl[i+1]:
             count = count +1
             if  (i != (stlen -2)):
@@ -27,7 +26,6 @@ def compress (st):
             if (i == (stlen - 2)):
                 return stl[0:charcount]
             i = i+1
-
         else:
             stl[charcount] = str(stl[i])
             charcount = charcount + 1
